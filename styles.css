@@ -1,0 +1,31 @@
+/* Simple responsive styles for Afterburners site */
+:root{
+  --bg:#0f1115;--card:#121217;--accent:#ff5f2e;--muted:#9aa0a6;--text:#e6eef6;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#07101a 0%, #0b0d11 100%);color:var(--text);line-height:1.4}
+.container{max-width:980px;margin:0 auto;padding:1.25rem}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.01)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Inter,Segoe UI,system-ui,Arial;font-size:1.4rem;margin:0;color:var(--accent)}
+.main-nav a{color:var(--text);text-decoration:none;margin-left:1rem;font-weight:600}
+.main-nav a:hover{opacity:0.85}
+.hero{display:grid;grid-template-columns:1fr 300px;gap:1.25rem;margin-top:1.5rem}
+.panel{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:0.5rem 0.9rem;border-radius:6px;text-decoration:none}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.btn.small{padding:0.35rem 0.6rem;font-size:0.9rem}
+.cta-row .btn{margin-right:0.5rem}
+.site-footer{margin-top:2rem;padding:1rem 0;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted)}
+.roster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.player-card{background:rgba(255,255,255,0.02);padding:0.9rem;border-radius:8px}
+.avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ff9a6b);display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:0.5rem}
+.note{margin-top:1rem;color:var(--muted)}
+.tryout-panel{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px}
+.tryout-form{display:grid;gap:0.5rem;margin-top:0.5rem}
+.tryout-form input, .tryout-form textarea, .tryout-form select{padding:0.5rem;border-radius:6px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--text)}
+.tryout-form label{font-size:0.9rem}
+.form-message{margin-top:0.5rem;color:#b7f7d0}
+.honeypot{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.main-nav{display:flex;gap:0.5rem}}
+.small{font-size:0.9rem;color:var(--muted)}

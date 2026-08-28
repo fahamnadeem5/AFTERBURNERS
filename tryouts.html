@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Afterburners — REMATCH Tryouts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Afterburners</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="roster.html">Roster</a>
+        <a href="tryouts.html">Tryouts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Tryouts</h2>
+    <p>Think you have what it takes to join our REMATCH lineup? Apply below and tell us where you dominate on the pitch.</p>
+
+    <section class="tryout-panel">
+      <h3>Apply to Afterburners</h3>
+      <ul>
+        <li>Game: REMATCH</li>
+        <li>Positions: ST, CAM, CDM, CB, or GK</li>
+        <li>Format: Online evaluation and team scrims</li>
+      </ul>
+
+      <form id="tryoutForm" class="tryout-form" action="https://formsubmit.co/ajax/fahamnadeem5a@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Afterburners REMATCH tryout application" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+        <label for="name">Full name</label>
+        <input id="name" name="name" required />
+
+        <label for="ign">In-game name (IGN)</label>
+        <input id="ign" name="ign" required />
+
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" min="13" />
+
+        <label for="role">Preferred role</label>
+        <select id="role" name="role">
+          <option>ST — Striker</option>
+          <option>CAM — Attacking Midfielder</option>
+          <option>CDM — Defensive Midfielder</option>
+          <option>CB — Center Back</option>
+          <option>GK — Goalkeeper</option>
+        </select>
+
+        <label for="contact">Contact (Discord / Email)</label>
+        <input id="contact" name="contact" required />
+
+        <label for="notes">REMATCH experience / highlights</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Rank, experience, clips, availability, and anything else we should know."></textarea>
+
+        <button type="submit" class="btn">Submit Application</button>
+        <div id="tryoutMessage" class="form-message" aria-live="polite"></div>
+      </form>
+
+      <p class="small">By submitting, you agree to be contacted by Afterburners about your REMATCH tryout application.</p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Afterburners</small>
+    </div>
+  </footer>
+</body>
+</html>
