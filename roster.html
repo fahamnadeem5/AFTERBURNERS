@@ -12,50 +12,53 @@
       <h1 class="logo">Afterburners</h1>
       <nav class="main-nav">
         <a href="index.html">Home</a>
-        <a href="roster.html">Roster</a>
+        <a href="roster.html" class="active">Roster</a>
         <a href="tryouts.html">Tryouts</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Team Roster</h2>
-    <p>Our current REMATCH lineup, from striker to goalkeeper.</p>
+  <main class="container" style="padding-top:3rem;padding-bottom:2rem">
+    <div style="position:relative">
+      <div class="glow-orb" style="width:260px;height:260px;background:rgba(0,229,255,0.06);top:-100px;right:-80px;animation-delay:1s"></div>
+    </div>
+    <h2 class="section-title">Team <span>Roster</span></h2>
+    <p class="section-sub">Our current REMATCH lineup, from striker to goalkeeper.</p>
 
     <section class="roster-grid">
       <article class="player-card">
         <div class="avatar">AB</div>
-        <h3>SPROGES (Captain)</h3>
-        <p>Role: CAM
-        <br/>Bio: Strategic playmaker who creates chances between the lines.</p>
+        <h3>SPROGES</h3>
+        <div class="role-tag">CAM &middot; Captain</div>
+        <p>Strategic playmaker who creates chances between the lines.</p>
       </article>
 
       <article class="player-card">
         <div class="avatar">FL</div>
         <h3>Faham</h3>
-        <p>Role: ST
-        <br/>Bio: Aggressive playstyle, excels in duels.</p>
+        <div class="role-tag">ST</div>
+        <p>Aggressive playstyle, excels in duels.</p>
       </article>
 
       <article class="player-card">
         <div class="avatar">VY</div>
         <h3>Vyper</h3>
-        <p>Role: CDM
-        <br/>Bio: Reliable ball winner who keeps the team balanced.</p>
+        <div class="role-tag">CDM</div>
+        <p>Reliable ball winner who keeps the team balanced.</p>
       </article>
 
       <article class="player-card">
         <div class="avatar">S0</div>
         <h3>SmokeZero</h3>
-        <p>Role: CB
-        <br/>Bio: Calm defender with strong reads and clutch tackles.</p>
+        <div class="role-tag">CB</div>
+        <p>Calm defender with strong reads and clutch tackles.</p>
       </article>
 
       <article class="player-card">
         <div class="avatar">RK</div>
         <h3>Rook</h3>
-        <p>Role: GK
-        <br/>Bio: Last line of defense with quick reactions and command.</p>
+        <div class="role-tag">GK</div>
+        <p>Last line of defense with quick reactions and command.</p>
       </article>
     </section>
 
@@ -64,7 +67,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© Afterburners</small>
+      <small>&copy; <span class="footer-accent">Afterburners</span> &mdash; Keep the flame alive</small>
     </div>
   </footer>
 </body>

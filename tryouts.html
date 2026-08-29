@@ -13,14 +13,17 @@
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="roster.html">Roster</a>
-        <a href="tryouts.html">Tryouts</a>
+        <a href="tryouts.html" class="active">Tryouts</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Tryouts</h2>
-    <p>Think you have what it takes to join our REMATCH lineup? Apply below and tell us where you dominate on the pitch.</p>
+  <main class="container" style="padding-top:3rem;padding-bottom:2rem">
+    <div style="position:relative">
+      <div class="glow-orb" style="width:240px;height:240px;background:rgba(255,95,46,0.06);top:-80px;left:-60px;animation-delay:0.5s"></div>
+    </div>
+    <h2 class="section-title">Try<span>outs</span></h2>
+    <p class="section-sub">Think you have what it takes to join our REMATCH lineup? Apply below and tell us where you dominate on the pitch.</p>
 
     <section class="tryout-panel">
       <h3>Apply to Afterburners</h3>
@@ -58,7 +61,7 @@
         <label for="notes">REMATCH experience / highlights</label>
         <textarea id="notes" name="notes" rows="4" placeholder="Rank, experience, clips, availability, and anything else we should know."></textarea>
 
-        <button type="submit" class="btn">Submit Application</button>
+        <button type="submit" class="btn primary">Submit Application</button>
         <div id="tryoutMessage" class="form-message" aria-live="polite"></div>
       </form>
 
@@ -69,7 +72,7 @@
   <script src="main.js"></script>
   <footer class="site-footer">
     <div class="container">
-      <small>© Afterburners</small>
+      <small>&copy; <span class="footer-accent">Afterburners</span> &mdash; Keep the flame alive</small>
     </div>
   </footer>
 </body>
